@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/Css/index.css">
+</head>
+<body>
+    <%- include('header'); %>
+    <table border="1">
+        <tr>
+            <th class="title">Title</th>
+            <th class="price">Price</th>
+            <th class="description">Description</th>
+            <th class="img">Image</th>
+            <th class="rating">Rating</th>
+        </tr>
+        <% data.forEach(function(user) { %>
+            <tr>
+                <td class="title"><%= user.title %></td>
+                <td class="price"><%= user.price %></td>
+                <td class="description"><%= user.description %></td>
+                <td class="img"><img src="<%= user.image %>" alt="huhu"></td>
+                <td class="rating"><%= user.rating.rate %> / <%= user.rating.count %></td>
+            </tr>
+        <% }) %>
+    </table>
+    <%- include('footer'); %>   
+</body>
+<script>
+    
+</script>
+</html>

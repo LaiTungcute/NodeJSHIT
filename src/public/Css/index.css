@@ -1,0 +1,57 @@
+img {
+    width: 100px;
+    height: 100px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.title, .price, .description, .img, .rating {
+    padding: 5px;
+    text-align: center;
+}
+
+.title {
+    width: 200px;
+}
+
+.price {
+    width: 100px;
+}
+
+.description {
+    width: 600px;
+}
+
+.img {
+    width: 200px;
+}
+
+.rating {
+    width: 100px;
+}
+
+input, button {
+    padding: 10px;
+}
+
+.addP {
+    height: 300px;
+}
+
+.addP tr  td:first-child {
+    padding-right: 50px;
+}
+
+button {
+    background-color: orange;
+    border: none;
+    width: 100px;
+    height: 50px;
+    color: blue;
+    font-size: 1rem;
+    margin-left: 60px;
+    margin-top: 20px;
+    cursor: pointer;
+}
